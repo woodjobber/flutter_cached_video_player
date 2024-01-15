@@ -45,8 +45,10 @@
 
 ## 2.0.5
 * Sync official [Video Player] Plugin.
-* 
 ## 2.0.6
 * Sync official [Video Player] Plugin and change README.md.
 ## 2.0.7
 * Android minSdkVersion 19.
+
+## 2.0.8
+* Create Default Video Platform.

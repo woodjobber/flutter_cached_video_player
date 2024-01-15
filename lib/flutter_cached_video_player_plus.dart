@@ -9,18 +9,27 @@ import 'dart:math' as math;
 import 'package:flutter/foundation.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter/services.dart';
+import 'package:flutter_cached_video_player_plus/src/video_player_platform_interface/method_channel_video_player.dart';
 import 'package:video_player_platform_interface/video_player_platform_interface.dart';
 
-import 'src/closed_caption_file.dart';
+import 'flutter_cached_video_player_plus.dart';
 
 export 'package:video_player_platform_interface/video_player_platform_interface.dart'
     show DataSourceType, DurationRange, VideoFormat, VideoPlayerOptions;
 
 export 'src/closed_caption_file.dart';
+export 'src/video_player_platform_interface/video_player_platform_config.dart';
 
 VideoPlayerPlatform? _lastVideoPlayerPlatform;
 
+@pragma('vm:entry-point')
 VideoPlayerPlatform get _videoPlayerPlatform {
+  /// use default video player platform
+  ///
+  if (VideoPlayerPlatformConfig.useDefault) {
+    initDefaultVideoPlayerPlatform();
+  }
+
   final VideoPlayerPlatform currentInstance = VideoPlayerPlatform.instance;
   if (_lastVideoPlayerPlatform != currentInstance) {
     // This will clear all open videos on the platform when a full restart is
@@ -29,6 +38,11 @@ VideoPlayerPlatform get _videoPlayerPlatform {
     _lastVideoPlayerPlatform = currentInstance;
   }
   return currentInstance;
+}
+
+@pragma('vm:entry-point')
+void initDefaultVideoPlayerPlatform() {
+  VideoPlayerPlatform.instance = MyCustomMethodChannelVideoPlayer.instance;
 }
 
 /// The duration, current position, buffering state, error state and settings

@@ -5,7 +5,7 @@ Web plugin will work like official [video_player](https://pub.dev/packages/video
 
 ## Installation
 
-First, add `flutter_cached_video_player` as a [dependency in your pubspec.yaml file](https://flutter.io/platform-plugins/).
+First, add `flutter_cached_video_player_plus` as a [dependency in your pubspec.yaml file](https://flutter.io/platform-plugins/).
 
 Follow the Android and iOS configuration steps of the official [video_player](https://pub.dev/packages/video_player#installation) package. This plugin won't work in Desktop.
 

@@ -42,3 +42,6 @@
 * Preserve headers when using KTVHTTPCache
 * Skip caching in iOS if formatHint is `hls`
 * Update exoplayer dependencies and replace deprecations
+
+## 2.0.5
+* Sync official [Video Player] Plugin.

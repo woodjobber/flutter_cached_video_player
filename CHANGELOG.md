@@ -52,3 +52,6 @@
 
 ## 2.0.9
 * Create Default Video Platform.
+
+## 2.1.0
+* KTVHTTPCache => 3.0.0

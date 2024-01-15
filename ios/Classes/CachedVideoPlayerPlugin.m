@@ -473,6 +473,7 @@ static inline CGFloat radiansToDegrees(CGFloat radians) {
   self = [super init];
   NSAssert(self, @"super init cannot be nil");
   [KTVHTTPCache proxyStart:nil];
+  [KTVHTTPCache cacheSetMaxCacheLength:1024 * 1024 * 1024];
   _registry = [registrar textures];
   _messenger = [registrar messenger];
   _registrar = registrar;

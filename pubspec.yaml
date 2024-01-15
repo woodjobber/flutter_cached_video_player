@@ -26,7 +26,7 @@ dependencies:
 
   html: ^0.15.0
 
-  video_player_platform_interface: ">=6.2.0"
+  video_player_platform_interface: "^6.2.0"
 
   flutter:
     sdk: flutter

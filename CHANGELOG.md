@@ -45,3 +45,6 @@
 
 ## 2.0.5
 * Sync official [Video Player] Plugin.
+* 
+## 2.0.6
+* Sync official [Video Player] Plugin and change README.md.

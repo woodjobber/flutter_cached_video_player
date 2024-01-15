@@ -2,44 +2,62 @@
 // Use of this source code is governed by a BSD-style license that can be
 // found in the LICENSE file.
 
-// @dart = 2.9
-
 import 'package:pigeon/pigeon_lib.dart';
 
 class TextureMessage {
-  int textureId;
+  final int textureId;
+
+  const TextureMessage({required this.textureId});
 }
 
 class LoopingMessage {
-  int textureId;
-  bool isLooping;
+  final int textureId;
+  final bool isLooping;
+
+  const LoopingMessage({required this.textureId, required this.isLooping});
 }
 
 class VolumeMessage {
-  int textureId;
-  double volume;
+  final int textureId;
+  final double volume;
+
+  const VolumeMessage({required this.textureId, required this.volume});
 }
 
 class PlaybackSpeedMessage {
-  int textureId;
-  double speed;
+  final int textureId;
+  final double speed;
+
+  const PlaybackSpeedMessage({required this.textureId, required this.speed});
 }
 
 class PositionMessage {
-  int textureId;
-  int position;
+  final int textureId;
+  final int position;
+
+  const PositionMessage({required this.textureId, required this.position});
 }
 
 class CreateMessage {
-  String asset;
-  String uri;
-  String packageName;
-  String formatHint;
-  Map<String, String> httpHeaders;
+  final String asset;
+  final String uri;
+  final String packageName;
+  final String formatHint;
+  final Map<String, String> httpHeaders;
+
+  const CreateMessage({
+    required this.asset,
+    required this.uri,
+    required this.packageName,
+    required this.formatHint,
+    required this.httpHeaders,
+  });
 }
 
 class MixWithOthersMessage {
-  bool mixWithOthers;
+  final bool mixWithOthers;
+
+  const MixWithOthersMessage({required this.mixWithOthers});
 }
 
 @HostApi(dartHostTestHandler: 'TestHostVideoPlayerApi')

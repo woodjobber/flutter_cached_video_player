@@ -4,6 +4,7 @@
 
 import 'sub_rip.dart';
 export 'sub_rip.dart' show SubRipCaptionFile;
+export 'web_vtt.dart' show WebVTTCaptionFile;
 
 /// A structured representation of a parsed closed caption file.
 ///

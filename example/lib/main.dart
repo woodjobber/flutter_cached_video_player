@@ -1,5 +1,5 @@
 import 'package:flutter/material.dart';
-import 'package:cached_video_player/cached_video_player.dart';
+import 'package:flutter_cached_video_player/flutter_cached_video_player.dart';
 
 void main() {
   runApp(const MyApp());
@@ -52,8 +52,9 @@ class _MyHomePageState extends State<MyHomePage> {
   late CachedVideoPlayerController controller;
   @override
   void initState() {
-    controller = CachedVideoPlayerController.network(
-        "http://commondatastorage.googleapis.com/gtv-videos-bucket/sample/BigBuckBunny.mp4");
+    controller = CachedVideoPlayerController.networkUrl(
+        "http://commondatastorage.googleapis.com/gtv-videos-bucket/sample/BigBuckBunny.mp4"
+            .toUri);
     controller.initialize().then((value) {
       controller.play();
       setState(() {});
@@ -83,4 +84,8 @@ class _MyHomePageState extends State<MyHomePage> {
               : const CircularProgressIndicator()), // This trailing comma makes auto-formatting nicer for build methods.
     );
   }
+}
+
+extension UriString on String {
+  Uri get toUri => Uri.parse(this);
 }

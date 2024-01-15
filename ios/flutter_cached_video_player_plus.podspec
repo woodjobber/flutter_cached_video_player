@@ -3,7 +3,7 @@
 #
 Pod::Spec.new do |s|
   s.name             = 'flutter_cached_video_player_plus'
-  s.version          = '0.0.2'
+  s.version          = '0.0.3'
   s.summary          = 'Cached Video Player'
   s.description      = <<-DESC
 Cached Video Player

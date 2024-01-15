@@ -1,0 +1,6 @@
+flutter packages pub publish --server=https:\/\/pub.dartlang.org
+
+
+flutter packages pub publish --dry-run
+
+https://www.jianshu.com/p/5c3721efc6f9

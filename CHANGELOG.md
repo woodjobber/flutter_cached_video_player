@@ -50,5 +50,5 @@
 ## 2.0.7
 * Android minSdkVersion 19.
 
-## 2.0.8
+## 2.0.9
 * Create Default Video Platform.

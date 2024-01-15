@@ -20,7 +20,7 @@ Cached Video Player
   # KTVHTTPCache
   s.dependency 'KTVHTTPCache', '~> 3.0.0'
   
-  s.platform = :ios, '10.0'
+  s.platform = :ios, '12.0'
   s.pod_target_xcconfig = { 'DEFINES_MODULE' => 'YES', 'VALID_ARCHS[sdk=iphonesimulator*]' => 'x86_64' }
 end
 

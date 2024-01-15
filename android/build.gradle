@@ -27,7 +27,7 @@ project.getTasks().withType(JavaCompile){
 apply plugin: 'com.android.library'
 
 android {
-    compileSdkVersion 33
+    compileSdkVersion 29
 
     defaultConfig {
         minSdkVersion 21

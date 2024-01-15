@@ -25,8 +25,7 @@ dependencies:
   video_player_web: ^2.0.10
 
   html: ^0.15.0
-  video_player_android: any
-  video_player_avfoundation: any
+
   video_player_platform_interface: ">=6.2.0"
 
   flutter:

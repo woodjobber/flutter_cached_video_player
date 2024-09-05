@@ -57,7 +57,7 @@ android {
             signingConfig signingConfigs.debug
         }
     }
-    namespace 'com.example.example'
+    namespace 'com.example.flutter_cached_video_player_plus'
 }
 
 flutter {

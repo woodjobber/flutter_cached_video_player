@@ -27,6 +27,7 @@ project.getTasks().withType(JavaCompile){
 apply plugin: 'com.android.library'
 
 android {
+    namespace "com.example.flutter_cached_video_player"
     compileSdkVersion 31
 
     defaultConfig {

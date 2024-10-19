@@ -9,7 +9,7 @@ buildscript {
     }
 
     dependencies {
-        classpath 'com.android.tools.build:gradle:7.2.1'
+        // classpath 'com.android.tools.build:gradle:7.2.1'
     }
 }
 
@@ -28,7 +28,7 @@ apply plugin: 'com.android.library'
 
 android {
     namespace "com.example.example"
-    compileSdkVersion 31
+    compileSdkVersion 34
 
     defaultConfig {
         minSdkVersion 16
@@ -40,8 +40,8 @@ android {
         disable 'GradleDependency'
     }
     compileOptions {
-        sourceCompatibility JavaVersion.VERSION_1_8
-        targetCompatibility JavaVersion.VERSION_1_8
+        sourceCompatibility JavaVersion.VERSION_17
+        targetCompatibility JavaVersion.VERSION_17
     }
 
     dependencies {
